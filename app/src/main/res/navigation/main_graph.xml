@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main_graph"
+  app:startDestination="@+id/chooser_screen">
+
+  <fragment
+    android:id="@+id/chooser_screen"
+    android:name="com.sample.soccerfan.ChooserFragment"
+    android:label="Choose your League"
+    tools:layout="@layout/fragment_chooser">
+    <action
+      android:id="@+id/action_chooser_to_ucl"
+      app:destination="@id/ucl_screen" />
+    <action
+      android:id="@+id/action_chooser_to_uel"
+      app:destination="@id/uel_screen" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/ucl_screen"
+    android:name="com.sample.soccerfan.UCLFragment"
+    android:label="UCL"
+    tools:layout="@layout/fragment_ucl" />
+
+  <fragment
+    android:id="@+id/uel_screen"
+    android:name="com.sample.soccerfan.UELFragment"
+    android:label="UEL"
+    tools:layout="@layout/fragment_uel" />
+
+</navigation>
