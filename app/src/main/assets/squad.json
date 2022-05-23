@@ -1,0 +1,74 @@
+{
+  "squad": [
+    {
+      "goalkeepers": [
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        },
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        }
+      ]
+    },
+    {
+      "defenders": [
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        },
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        }
+      ]
+    },
+    {
+      "midfildiers": [
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        },
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        }
+      ]
+    },
+    {
+      "forwards": [
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        },
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        }
+      ]
+    },
+    {
+      "coach": [
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        },
+        {
+          "name": "player 1",
+          "country": "country 1",
+          "score": "25"
+        }
+      ]
+    }
+  ]
+}

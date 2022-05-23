@@ -1,0 +1,25 @@
+{
+  "league": "ucl",
+  "team": {
+    "name": "barcelona",
+    "status": "playing",
+    "round": "round of 16"
+  },
+  "display": [
+    {
+      "overview": []
+    },
+    {
+      "matches": []
+    },
+    {
+      "groups": []
+    },
+    {
+      "stats": []
+    },
+    {
+      "squad": []
+    }
+  ]
+}

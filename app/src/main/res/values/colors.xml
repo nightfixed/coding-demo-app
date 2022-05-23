@@ -9,4 +9,9 @@
   <color name="white">#FFFFFFFF</color>
 
   <color name="white_t_70">#B3FFFFFF</color>
+  <color name="grey_bg_1">#2C2C2E</color>
+  <color name="tab_bg">#151573</color>
+  <color name="brand_interaction">#5AF7DC</color>
+  <color name="neutral">#CCFFFFFF</color>
+  <color name="section_bg">#0A0A61</color>
 </resources>

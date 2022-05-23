@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="@color/tab_bg"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/tv_squad_position"
+    style="@style/TextAppearance.Material3.TitleMedium"
+    android:textSize="20sp"
+    android:layout_marginTop="@dimen/size_medium"
+    android:layout_marginLeft="@dimen/size_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    tools:text="Goalkeeper"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_players"
+    android:layout_width="match_parent"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/item_squad_player"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
