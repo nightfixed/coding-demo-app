@@ -27,6 +27,6 @@ The app is set to target the latest platform/version available.
 From a design perspective, it will follow the MVVM pattern, loosely based on the [guide provided here] (https://developer.android.com/topic/architecture)
 The main reasonings would be: available tools, life-cycle aware components, ease of debug and ease of testing.
 
-For this purpose, the structure will be based on 1 `Main Activity` and everything else will be built using `Fragments
+For this purpose, the structure will be based on 1 `Main Activity` and everything else will be built using `Fragments`
 
 (TBD)`
