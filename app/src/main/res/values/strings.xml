@@ -3,4 +3,5 @@
 
   <string name="btn_label_goto_ucl">Go To UCL Section</string>
   <string name="btn_label_goto_uel">Go To UEL Section</string>
+  <string name="squad_footer">* Player list B</string>
 </resources>

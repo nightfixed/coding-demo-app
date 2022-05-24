@@ -3,8 +3,11 @@ package com.sample.soccerfan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import coil.transform.CircleCropTransformation
 import com.sample.soccerfan.model.Player
 
 class SquadPlayerAdapter(private val players: List<Player>) : RecyclerView.Adapter<SquadPlayerAdapter.PlayerViewHolder>() {
@@ -21,7 +24,12 @@ class SquadPlayerAdapter(private val players: List<Player>) : RecyclerView.Adapt
     override fun getItemCount(): Int = players.size
 
     inner class PlayerViewHolder(private val containerView: View): RecyclerView.ViewHolder(containerView) {
-         fun bind(player: Player) {
+        fun bind(player: Player) {
+            containerView.findViewById<ImageView>(R.id.iv_profile_pic).load(player.profilePicUrl) {
+                crossfade(true)
+                placeholder(R.drawable.club_badge)
+                transformations(CircleCropTransformation())
+            }
             containerView.findViewById<TextView>(R.id.tv_player_name).text = player.name
             containerView.findViewById<TextView>(R.id.tv_player_country).text = player.country
             containerView.findViewById<TextView>(R.id.tv_player_score).text = player.score

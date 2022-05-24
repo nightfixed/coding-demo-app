@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -35,7 +36,9 @@ class SquadFragment: Fragment() {
         val manager =  LinearLayoutManager(requireContext())
         recyclerView.layoutManager = manager
         recyclerView.adapter = squadAdapter
-        recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), manager.orientation))
+        var itemDecoration = DividerItemDecoration(this.context, DividerItemDecoration.VERTICAL)
+        AppCompatResources.getDrawable(requireContext(), R.drawable.divider)?.let { itemDecoration.setDrawable(it) }
+        recyclerView.addItemDecoration(itemDecoration)
     }
 
     private fun subscribeUi() {
@@ -51,7 +54,7 @@ class SquadFragment: Fragment() {
     }
 
     private fun initSquadView(squad: Squad) {
-        squadAdapter.containerObject = squad
+        squadAdapter.updateSquad(squad)
         squadAdapter.notifyDataSetChanged()
     }
 }
