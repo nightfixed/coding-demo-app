@@ -6,4 +6,5 @@
   xmlns:tools="http://schemas.android.com/tools"
   app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
   tools:listitem="@layout/item_squad_section"
+  android:nestedScrollingEnabled="true"
   android:layout_height="wrap_content" />

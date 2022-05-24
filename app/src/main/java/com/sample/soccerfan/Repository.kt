@@ -40,12 +40,12 @@ class Repository {
     }
 
     private fun dummyGoalKeepers(): List<Player> = ArrayList<Player>().apply {
-        add(Player(profilePicUrl = "", name = "Random player 1", country = "Some country", score = "27"))
-        add(Player(profilePicUrl = "", name = "Random player 20", country = "Another country", score = "20"))
-        add(Player(profilePicUrl = "", name = "Random player 0", country = "New country", score = "18"))
+        add(Player(profilePicUrl = "https://api.lorem.space/image/face?w=150&h=150", name = "Random player 1", country = "Some country", score = "27"))
+        add(Player(profilePicUrl = "https://api.lorem.space/image/face?w=150&h=150", name = "Random player 20", country = "Another country", score = "20"))
+        add(Player(profilePicUrl = "https://api.lorem.space/image/face?w=150&h=150", name = "Random player 0", country = "New country", score = "18"))
     }
 
     private fun dummyCoach(): List<Player> = ArrayList<Player>().apply {
-        add(Player(profilePicUrl = "", name = "Random player 1", country = "Some country", score = "27"))
+        add(Player(profilePicUrl = "https://api.lorem.space/image/face?w=150&h=150", name = "Random Coach", country = "Some country", score = "27"))
     }
 }
