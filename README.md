@@ -29,4 +29,9 @@ The main reasonings would be: available tools, life-cycle aware components, ease
 
 For this purpose, the structure will be based on 1 `Main Activity` and everything else will be built using `Fragments`
 
-(TBD)`
+The `Repository` layer will communicate with the `Presentation` layer through `Flows`. 
+
+The `Presentation` layer will communicate with the `UI` layer through `LiveData`.
+
+`Coil` is the library of choice for image loading.
+
