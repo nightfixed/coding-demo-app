@@ -3,9 +3,11 @@
   android:id="@+id/tv_team_status"
   android:text="@string/squad_footer"
   style="@style/TextAppearance.Material3.LabelLarge"
-  android:layout_width="wrap_content"
+  android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:layout_marginLeft="@dimen/size_medium"
+  android:layout_marginLeft="-8dp"
+  android:paddingLeft="@dimen/size_medium"
   android:paddingBottom="59dp"
   android:paddingTop="18dp"
+  android:background="?attr/colorPrimaryVariant"
   android:textColor="@color/white_t_70" />
