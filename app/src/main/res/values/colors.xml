@@ -16,7 +16,7 @@
   <color name="neutral">#CCFFFFFF</color>
   <color name="section_bg">@color/dark_blue_3</color>
   <color name="dark_blue_4">#000040</color>
-  <color name="some_grey">#1C1C1E</color>
+  <color name="grey_bg_2">#1C1C1E</color>
 
   <color name="brand_interaction2">#FF6900</color>
   <color name="full_black">#000000</color>
